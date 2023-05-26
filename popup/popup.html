@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <h1 class="app-title">URL Shorter</h1>
+        <div class="app-content">
+            <form class="form" id="form">
+                <div class="form-group">
+                    <label for="url">Enter long URL</label>
+                    <input type="url" name="url" id="url" autocomplete="off" placeholder="Enter long URL here..." autofocus>
+                </div>
+                <button class="btn btn-primary">
+                    Shorten URL
+                </button>
+            </form>
+            <div class="short-url" id="short-url">
+                <h2 class="app-sub-title">Shorten URL Result</h2>
+                <div class="short-url-container">
+                    <div class="short-url-result" id="short-url-result"></div>
+                    <button class="btn btn-sm btn-secondary" id="btn-copy">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
